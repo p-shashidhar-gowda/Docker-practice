@@ -1,0 +1,19 @@
+Tasks To Be Performed:
+1. Use the saved image in the previous assignment
+2. Upload this image on Docker Hub
+3. On a separate machine pull this Docker Hub image and launch it on port 80
+4. Start the Apache2 service
+5. Verify if you are able to see the Apache2 service
+
+
+Solution commands :
+docker login 
+docker push pshashidhargowda/apache
+docker pull pshashidhargowda/apache
+docker run -it -p 80:80 -d pshashidhargowda/apache
+docker ps 
+docker exec -it ef87dfcba296 bash
+service apache2 start 
+service apache2 status 
+exit 
+curl http://localhost
