@@ -1,0 +1,14 @@
+Tasks To Be Performed:
+1. Create a Dockerfile with the following specs:
+● Ubuntu container
+● Apache2 installed
+● Apache2 should automatically run once the container starts
+2. Submit the Dockerfile for assignment completion
+
+
+Dockerfile :
+
+FROM ubuntu 
+RUN apt update 
+RUN apt install apache2 -y 
+CMD apachectl -D FOREGROUND 
