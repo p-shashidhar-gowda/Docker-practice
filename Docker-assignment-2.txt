@@ -1,0 +1,16 @@
+Tasks To Be Performed:
+1. Save the image created in assignment 1 as a Docker image
+2. Launch container from this new image and map the port to 81
+3. Go inside the container and start the Apache2 service
+4. Check if you are able to access it on the browser
+
+Solution commands :
+docker ps 
+docker commit 405a0451a185 pshashidhargowda/apache
+docker run -it -p 81:80 -d pshashidhargowda/apache
+docker ps 
+docker exec -it 9c9c7523d4c3 bash
+service apache2 start 
+service apache2 status 
+exit 
+curl http://localhost:81
