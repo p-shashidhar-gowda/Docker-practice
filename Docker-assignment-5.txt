@@ -1,0 +1,15 @@
+Tasks To Be Performed:
+1. Create a sample HTML file
+2. Use the Dockerfile from the previous task
+3. Replace this sample HTML file inside the Docker container with the default
+page
+
+
+
+Dockerfile :
+
+FROM ubuntu 
+ADD index.html /var/www/html/index.html
+RUN apt update 
+RUN apt install apache2 -y 
+CMD apachectl -D FOREGROUND 
