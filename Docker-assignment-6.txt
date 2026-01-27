@@ -1,0 +1,9 @@
+Tasks To Be Performed:
+1. Launch the Apache2 container created in previous module
+2. Create a Docker volume on /var/www/html
+Please submit the commands in order to complete this assignment.
+
+
+Solution commands :
+docker volume create myvolume 
+docker run -it --mount source=myvolume,destination=/var/www/html -d pshashidhargowda/apache
