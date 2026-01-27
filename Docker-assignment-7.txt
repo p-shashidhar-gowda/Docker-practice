@@ -1,0 +1,6 @@
+Tasks To Be Performed:
+1. Use the Apache2 container created in previous module
+2. Create a bind mount on /var/www/html to replace html files dynamically
+
+Solution commands :
+docker run -it -v /home/appu/Desktop/DockerBindMount:/var/www/html -d pshashidhargowda/apache
