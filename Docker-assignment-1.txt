@@ -1,0 +1,16 @@
+Tasks To Be Performed:
+1. Pull Ubuntu container
+2. Run this container and map port 80 on the local
+3. Install Apache2 on this container
+4. Check if you are able to access the Apache page on your browser
+
+Solution commands :
+docker pull ubuntu 
+docker run -it -p 80:80 -d ubuntu
+docker ps 
+docker exec -it 405a0451a185 bash 
+apt update 
+apt install apache2 -y 
+service apache2 start 
+exit 
+curl http://localhost
