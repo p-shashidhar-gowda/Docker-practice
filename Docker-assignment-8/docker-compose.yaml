@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  container1:
+    build: ./container1
+    ports:
+      - "81:80"
+  container2:
+    build: ./container2
+    ports:
+      - "82:80"
+  container3:
+    build: ./container3
+    ports:
+      - "83:80"
+  container4:
+    build: ./container4
+    ports:
+      - "84:80"
+  container5:
+    build: ./container5
+    ports:
+      - "85:80"

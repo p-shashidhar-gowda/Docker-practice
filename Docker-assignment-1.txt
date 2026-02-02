@@ -4,7 +4,7 @@ Tasks To Be Performed:
 3. Install Apache2 on this container
 4. Check if you are able to access the Apache page on your browser
 
-Solution commands :
+Solution commands 
 docker pull ubuntu 
 docker run -it -p 80:80 -d ubuntu
 docker ps 
